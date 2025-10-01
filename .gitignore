@@ -1,0 +1,77 @@
+# # Creado por Gemini - https://gemini.google.com
+# Gitignore para Proyectos Python
+
+# 1. Ignorar archivos de Bytecode y optimizados
+# Python genera estos archivos al ejecutar tu código.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# 2. Ignorar Entornos Virtuales
+# Las dependencias deben manejarse con un archivo como 'requirements.txt'.
+# El entorno en sí no debe subirse al repositorio.
+venv/
+env/
+.venv/
+.env/
+virtualenv/
+ENV/
+VENV/
+
+
+# 3. Archivos de Distribución / Empaquetado
+# Generados al crear un paquete de Python.
+build/
+dist/
+*.egg-info/
+*.egg
+wheels/
+*.whl
+
+
+# 4. Archivos de configuración de IDEs y editores
+# Cada desarrollador tiene su propia configuración local.
+.vscode/
+.idea/
+*.sublime-*
+
+
+# 5. Archivos específicos del sistema operativo
+# Archivos de metadatos de macOS, Windows y Linux.
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+
+# 6. Registros y bases de datos locales
+# Los logs y bases de datos de prueba no deben ser versionados.
+*.log
+*.sqlite3
+*.db
+
+
+# 7. Archivos de Pruebas (Testing) y Cobertura
+# Reportes y caché generados por herramientas como pytest y coverage.
+.pytest_cache/
+.coverage
+htmlcov/
+nosetests.xml
+coverage.xml
+
+
+# 8. Documentación generada
+# Si usas herramientas como Sphinx o MkDocs para generar la documentación.
+site/
+_build/
+
+
+# 9. Archivos de entorno y credenciales
+# ¡MUY IMPORTANTE! Nunca subas archivos con contraseñas o claves de API.
+# Es común usar un archivo .env.template para mostrar la estructura.
+.env
+.env.*
+!.env.example
+credentials.*
+config.ini
